@@ -43,13 +43,15 @@
                  <input type="text" name="lname">
             </div>
              <div class="inputs"><label for="email">Email</label>
-             <input type="email" name="mail"></div>
+             <input type="email" name="mail" placeholder="yourmail@something.com"></div>
              <div class="inputs"><label for="phone">Phone Number</label>
-             <input type="tel" name="phone"></div>
+             <input type="tel" name="phone" pattern="[0-9]{1}-[0-9]{4}-[0-9]{4}">
+             <small style="font-size: 10px">Format:9-9956-7890</small></div>
+             
              <div class="inputs"><label for="pass">Password</label>
-             <input type="password" name="pass"></div>
+             <input type="password" name="pass" minlength="8"></div>
              <div class="inputs"><label for="rpass">Repeat Password</label>
-             <input type="password" name="rpass"></div>
+             <input type="password" name="rpass" minlength="8"></div>
              
              
              
@@ -59,8 +61,8 @@
         </form>
     </div>
     <div class="submit-btn">
-        <div class="btn">
-            <input type="submit" value="Create Account">
+        <div class="btn-div">
+            <input class="btn" type="submit" value="Create Account">
             <p>already have an account? <a href="http://" target="_blank" rel="noopener noreferrer">Log in</a> </p>
         </div>
         
